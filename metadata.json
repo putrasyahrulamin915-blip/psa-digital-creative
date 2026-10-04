@@ -1,0 +1,6 @@
+{
+  "name": "PSA Digital Creative",
+  "description": "Smart Design & Digital Order – Layanan desain digital dan pemesanan produk kreatif online yang terstruktur dan transparan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

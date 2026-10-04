@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mugBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="25%" stop-color="#FFFFFF" />
+      <stop offset="85%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+    <linearGradient id="mugPrint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="mShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="#0B1120" />
+
+  <!-- Pedestal Base shadow -->
+  <ellipse cx="400" cy="480" rx="220" ry="40" fill="#030712" opacity="0.6" filter="blur(15px)" />
+
+  <!-- Ceramic Mug Assembly -->
+  <g transform="translate(250, 140)" filter="url(#mShadow)">
+    
+    <!-- Mug Handle Right -->
+    <path d="M 230 70 C 330 70 330 250 230 250" fill="none" stroke="#FFFFFF" stroke-width="45" stroke-linecap="round" />
+    <path d="M 230 70 C 320 70 320 250 230 250" fill="none" stroke="#E2E8F0" stroke-width="25" stroke-linecap="round" />
+
+    <!-- Main Mug Cylinder -->
+    <rect x="0" y="30" width="250" height="290" rx="16" fill="url(#mugBody)" stroke="#CBD5E1" stroke-width="1.5" />
+    <!-- Mug Bottom Base Ellipse -->
+    <ellipse cx="125" cy="320" rx="125" ry="25" fill="#E2E8F0" />
+
+    <!-- Mug Rim Top Ellipse -->
+    <ellipse cx="125" cy="30" rx="125" ry="30" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+    <!-- Inner coffee hole -->
+    <ellipse cx="125" cy="30" rx="110" ry="24" fill="#3E2723" />
+
+    <!-- Printed Sublimation Graphic on Mug Face -->
+    <g transform="translate(30, 90)">
+      <rect width="180" height="150" rx="12" fill="url(#mugPrint)" />
+      
+      <!-- Logo inside printed section -->
+      <circle cx="90" cy="55" r="30" fill="#FFFFFF" />
+      <path d="M 82 45 L 94 45 C 99 45 102 48 102 53 C 102 58 99 61 94 61 L 88 61 L 88 67" stroke="#3B66FF" stroke-width="3" stroke-linecap="round" fill="none" />
+      <circle cx="102" cy="65" r="2.5" fill="#60A5FA" />
+
+      <text x="90" y="110" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="14" fill="#FFFFFF">PSA DIGITAL</text>
+      <text x="90" y="126" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="#BAE6FD" letter-spacing="2">SMART MERCHANDISE</text>
+    </g>
+
+    <!-- Glossy Ceramic Light Streak Reflection -->
+    <path d="M 25 35 L 45 35 L 45 315 L 25 315 Z" fill="#FFFFFF" opacity="0.35" />
+  </g>
+
+  <!-- Steam coming out top -->
+  <path d="M 340 100 Q 330 60 350 30" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.25" />
+  <path d="M 375 90 Q 395 50 380 20" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.25" />
+  <path d="M 410 105 Q 400 65 420 35" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.25" />
+
+  <!-- Info Tag -->
+  <g transform="translate(80, 240)">
+    <rect width="190" height="85" rx="14" fill="#1E293B" stroke="#334155" />
+    <text x="20" y="32" font-family="sans-serif" font-size="10" font-weight="800" fill="#38BDF8">SOUVENIR &amp; MERCH</text>
+    <text x="20" y="52" font-family="sans-serif" font-size="15" font-weight="900" fill="#FFFFFF">Rp45.000 / pcs</text>
+    <text x="20" y="68" font-family="sans-serif" font-size="9" fill="#94A3B8">Keramik Putih SNI + Box Satuan</text>
+  </g>
+</svg>

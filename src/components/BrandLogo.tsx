@@ -1,0 +1,120 @@
+import React from 'react';
+import { APP_CONFIG } from '../lib/appConfig';
+
+interface BrandLogoProps {
+  className?: string;
+  variant?: 'full' | 'compact' | 'monogram';
+  white?: boolean;
+}
+
+export default function BrandLogo({
+  className = 'h-10 md:h-12 w-auto',
+  variant = 'full',
+  white = false,
+}: BrandLogoProps) {
+  const blueColor = '#3B66FF';
+  const textColor = white ? '#FFFFFF' : '#0F172A';
+
+  if (variant === 'monogram') {
+    return (
+      <div className="flex items-center select-none group">
+        <svg
+          viewBox="0 0 100 100"
+          className={`${className} object-contain transition-transform duration-200 group-hover:scale-105`}
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label={APP_CONFIG.brandName}
+        >
+          <rect width="100" height="100" rx="24" fill={white ? '#1E293B' : '#0F172A'} stroke="#3B66FF" strokeWidth="3" />
+          <path
+            d="M 28 26 L 50 26 C 62 26 70 33 70 44 C 70 55 62 62 50 62 L 40 62 L 40 76"
+            stroke={blueColor}
+            strokeWidth="7"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <circle cx="70" cy="74" r="6" fill="#60A5FA" />
+        </svg>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex items-center gap-3 select-none group">
+      <svg
+        viewBox="0 0 540 140"
+        className={`${className} object-contain transition-transform duration-200 group-hover:scale-[1.02]`}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-label={APP_CONFIG.brandName}
+      >
+        <defs>
+          <linearGradient id="logoEmblemGradBrand" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#1E293B" />
+            <stop offset="100%" stopColor="#0F172A" />
+          </linearGradient>
+          <linearGradient id="blueGlowBrand" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#60A5FA" />
+            <stop offset="100%" stopColor="#2563EB" />
+          </linearGradient>
+        </defs>
+        {/* Emblem Left Box */}
+        <g transform="translate(10, 15)">
+          <rect width="110" height="110" rx="26" fill="url(#logoEmblemGradBrand)" stroke="#3B66FF" strokeWidth="3" />
+          {/* Emblem P Glyph */}
+          <path
+            d="M 32 30 L 58 30 C 72 30 82 38 82 50 C 82 62 72 70 58 70 L 46 70 L 46 84"
+            stroke="url(#blueGlowBrand)"
+            strokeWidth="8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <circle cx="82" cy="82" r="7" fill="#60A5FA" />
+        </g>
+        {/* Brand Text Right */}
+        <g transform="translate(138, 20)">
+          {/* Top Line: PSA.ID in Royal Electric Blue */}
+          <g transform="translate(0, 0)">
+            {/* Glyph P */}
+            <path
+              d="M 0,10 C 0,4 6,0 14,0 L 38,0 C 58,0 72,12 72,32 C 72,52 58,64 38,64 L 22,64 L 22,80 C 22,86 16,90 10,90 C 4,90 0,86 0,80 Z M 22,20 L 22,44 L 38,44 C 47,44 52,38 52,32 C 52,26 47,20 38,20 Z"
+              fill={blueColor}
+            />
+            {/* Glyph S */}
+            <path
+              d="M 125,20 C 118,8 106,2 92,2 C 74,2 62,12 62,26 C 62,42 74,48 92,54 C 112,61 126,69 126,88 C 126,108 110,120 88,120 C 64,120 50,106 48,86 L 68,83 C 70,95 78,101 89,101 C 99,101 106,96 106,88 C 106,78 97,73 83,68 C 64,61 51,53 51,34 C 51,16 67,3 91,3 C 112,3 125,14 127,24 Z"
+              fill={blueColor}
+              transform="translate(18, -16) scale(0.75, 0.75)"
+            />
+            {/* Glyph A */}
+            <path
+              d="M 148,88 L 174,0 L 200,0 L 228,88 L 206,88 L 200,66 L 176,66 L 170,88 Z M 181,48 L 195,48 L 188,21 Z"
+              fill={blueColor}
+            />
+            {/* Dot Separator */}
+            <circle cx="246" cy="80" r="9" fill={blueColor} />
+            {/* Glyph I */}
+            <path d="M 268,88 L 268,0 L 290,0 L 290,88 Z" fill={blueColor} />
+            {/* Glyph D */}
+            <path
+              d="M 304,88 L 304,0 L 330,0 C 356,0 372,18 372,44 C 372,70 356,88 330,88 Z M 326,20 L 326,68 L 332,68 C 345,68 350,58 350,44 C 350,30 345,20 332,20 Z"
+              fill={blueColor}
+            />
+          </g>
+          {/* Bottom Line: DIGITAL CREATIVE */}
+          <text
+            x="4"
+            y="118"
+            fill={textColor}
+            fontFamily="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+            fontSize="21"
+            fontWeight="800"
+            letterSpacing="6px"
+          >
+            DIGITAL CREATIVE
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+}

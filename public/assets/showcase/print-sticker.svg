@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stickBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <filter id="stkShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#stickBg)" />
+
+  <!-- Sheet Grid representing A3+ Sticker Sheet Kiss-cut -->
+  <g stroke="#334155" stroke-width="1" stroke-dasharray="4 4" opacity="0.3">
+    <rect x="80" y="60" width="640" height="480" rx="16" fill="none" />
+  </g>
+
+  <!-- Circular Die-Cut Sticker (Left) -->
+  <g transform="translate(130, 150)" filter="url(#stkShadow)">
+    <!-- Peel back curl illusion -->
+    <circle cx="150" cy="150" r="140" fill="#0A0A0A" stroke="#3B66FF" stroke-width="3" />
+    <circle cx="150" cy="150" r="128" fill="none" stroke="#FACC15" stroke-width="2" stroke-dasharray="6 4" />
+    
+    <!-- Sticker Graphic -->
+    <circle cx="150" cy="115" r="45" fill="#1E293B" />
+    <!-- Coffee bean / leaf emblem -->
+    <path d="M 150 85 C 130 95 130 135 150 145 C 170 135 170 95 150 85 Z" fill="#F59E0B" />
+    <path d="M 150 90 Q 155 115 150 140" stroke="#0F172A" stroke-width="2.5" fill="none" />
+
+    <text x="150" y="195" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="18" fill="#FFFFFF" letter-spacing="1">KOPI NUSANTARA</text>
+    <text x="150" y="215" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#38BDF8" letter-spacing="3">100% ARABICA BEANS</text>
+    <text x="150" y="235" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#94A3B8">Netto: 250g • Roast Date 2026</text>
+  </g>
+
+  <!-- Rectangular Packaging Box / Label (Right) -->
+  <g transform="translate(450, 130)" filter="url(#stkShadow)">
+    <rect width="250" height="340" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" />
+    <!-- Top header color bar -->
+    <rect x="0" y="0" width="250" height="70" rx="16" fill="#3B66FF" />
+    <rect x="0" y="50" width="250" height="20" fill="#3B66FF" />
+
+    <text x="125" y="42" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" fill="#FFFFFF">PREMIUM LABEL</text>
+    
+    <!-- Product Mockup Body -->
+    <rect x="25" y="90" width="200" height="110" rx="8" fill="#F8FAFC" stroke="#E2E8F0" />
+    <circle cx="125" cy="140" r="30" fill="#EEF2FF" />
+    <path d="M 125 120 L 132 135 L 148 138 L 136 150 L 139 166 L 125 158 L 111 166 L 114 150 L 102 138 L 118 135 Z" fill="#3B66FF" />
+
+    <!-- Nutrition / Barcode Info -->
+    <g transform="translate(25, 220)">
+      <rect x="0" y="0" width="200" height="6" rx="3" fill="#CBD5E1" />
+      <rect x="0" y="14" width="160" height="6" rx="3" fill="#E2E8F0" />
+      <rect x="0" y="28" width="180" height="6" rx="3" fill="#E2E8F0" />
+      
+      <!-- Barcode simulation -->
+      <g transform="translate(45, 45)">
+        <line x1="0" y1="0" x2="0" y2="35" stroke="#0A0A0A" stroke-width="3" />
+        <line x1="6" y1="0" x2="6" y2="35" stroke="#0A0A0A" stroke-width="1.5" />
+        <line x1="12" y1="0" x2="12" y2="35" stroke="#0A0A0A" stroke-width="4" />
+        <line x1="20" y1="0" x2="20" y2="35" stroke="#0A0A0A" stroke-width="2" />
+        <line x1="26" y1="0" x2="26" y2="35" stroke="#0A0A0A" stroke-width="1.5" />
+        <line x1="32" y1="0" x2="32" y2="35" stroke="#0A0A0A" stroke-width="3" />
+        <line x1="40" y1="0" x2="40" y2="35" stroke="#0A0A0A" stroke-width="2" />
+        <line x1="50" y1="0" x2="50" y2="35" stroke="#0A0A0A" stroke-width="4" />
+        <line x1="60" y1="0" x2="60" y2="35" stroke="#0A0A0A" stroke-width="2" />
+        <line x1="70" y1="0" x2="70" y2="35" stroke="#0A0A0A" stroke-width="3" />
+        <line x1="80" y1="0" x2="80" y2="35" stroke="#0A0A0A" stroke-width="1.5" />
+        <line x1="90" y1="0" x2="90" y2="35" stroke="#0A0A0A" stroke-width="3" />
+        <line x1="100" y1="0" x2="100" y2="35" stroke="#0A0A0A" stroke-width="2" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Tag specs -->
+  <g transform="translate(250, 520)">
+    <rect width="300" height="40" rx="20" fill="#1E293B" stroke="#334155" />
+    <text x="150" y="24" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#94A3B8">Stiker Vinyl Tahan Air • Kiss-Cut &amp; Die-Cut</text>
+  </g>
+</svg>

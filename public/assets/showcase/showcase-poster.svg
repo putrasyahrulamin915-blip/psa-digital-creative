@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="posterBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+    <linearGradient id="posterGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <filter id="pShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="#0B0F19" />
+
+  <!-- Atmospheric Background Circles -->
+  <circle cx="200" cy="180" r="140" fill="#2563EB" opacity="0.15" filter="blur(60px)" />
+  <circle cx="600" cy="400" r="160" fill="#7C3AED" opacity="0.15" filter="blur(70px)" />
+
+  <!-- Poster Frame Mockup in Center -->
+  <g transform="translate(230, 40)" filter="url(#pShadow)">
+    <!-- Poster Paper Base -->
+    <rect width="340" height="500" rx="12" fill="url(#posterBg)" stroke="#312E81" stroke-width="1.5" />
+    
+    <!-- Poster Graphic Art -->
+    <g transform="translate(24, 24)">
+      <!-- Top Tag -->
+      <rect width="90" height="20" rx="4" fill="#3B82F6" opacity="0.2" />
+      <text x="45" y="14" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#60A5FA" letter-spacing="1">TECH SUMMIT 2026</text>
+      
+      <!-- Date -->
+      <text x="292" y="14" text-anchor="end" font-family="monospace" font-size="9" fill="#94A3B8">OCT 24-26</text>
+
+      <!-- Main Poster Visual Shape -->
+      <g transform="translate(30, 60)">
+        <circle cx="115" cy="100" r="85" fill="none" stroke="url(#posterGlow)" stroke-width="2.5" />
+        <circle cx="115" cy="100" r="60" fill="url(#posterGlow)" opacity="0.25" />
+        <polygon points="115,45 160,135 70,135" fill="none" stroke="#60A5FA" stroke-width="3" />
+        <!-- Accent lines -->
+        <line x1="20" y1="100" x2="210" y2="100" stroke="#818CF8" stroke-width="1" stroke-dasharray="3 3" />
+      </g>
+
+      <!-- Big Typography Headline -->
+      <text x="0" y="275" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="30" fill="#FFFFFF" letter-spacing="-0.5">NEXT DIGITAL</text>
+      <text x="0" y="308" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="30" fill="#60A5FA" letter-spacing="-0.5">CREATIVE</text>
+      
+      <text x="0" y="335" font-family="sans-serif" font-size="11" fill="#CBD5E1">The Premier Visual &amp; Technology Conference</text>
+
+      <line x1="0" y1="355" x2="292" y2="355" stroke="#334155" stroke-width="1" />
+
+      <!-- Speaker Lineup Mockup -->
+      <g transform="translate(0, 375)">
+        <circle cx="18" cy="18" r="18" fill="#3B82F6" />
+        <text x="46" y="14" font-family="sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Keynote Speaker</text>
+        <text x="46" y="28" font-family="sans-serif" font-size="9" fill="#94A3B8">Design Director, PSA</text>
+
+        <!-- QR Code Mockup -->
+        <g transform="translate(225, 0)">
+          <rect width="40" height="40" rx="4" fill="#FFFFFF" />
+          <rect x="5" y="5" width="12" height="12" fill="#0A0A0A" />
+          <rect x="23" y="5" width="12" height="12" fill="#0A0A0A" />
+          <rect x="5" y="23" width="12" height="12" fill="#0A0A0A" />
+          <rect x="21" y="21" width="6" height="6" fill="#3B82F6" />
+        </g>
+      </g>
+
+      <!-- Bottom Bar -->
+      <text x="0" y="455" font-family="sans-serif" font-size="9" fill="#64748B">CMYK 300 DPI PRINT READY + HIGH-RES WEB RGB</text>
+    </g>
+  </g>
+
+  <!-- Left Float Badge -->
+  <g transform="translate(60, 240)" filter="url(#pShadow)">
+    <rect width="135" height="75" rx="12" fill="#1E293B" stroke="#334155" />
+    <text x="14" y="25" font-family="sans-serif" font-size="9" font-weight="800" fill="#3B82F6" letter-spacing="1">SIZE STANDARD</text>
+    <text x="14" y="45" font-family="sans-serif" font-size="14" font-weight="900" fill="#FFFFFF">A4 &amp; A3 Format</text>
+    <text x="14" y="62" font-family="sans-serif" font-size="9" fill="#94A3B8">Presisi cetak offset</text>
+  </g>
+</svg>
